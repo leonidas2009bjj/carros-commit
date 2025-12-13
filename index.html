@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alugue um carro</title>
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="nav container">
+      <a href="#" class="logo">Rento<span>.</span></a>
+
+      <div class="navbar">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Trending</a>
+        <a href="#" class="nav-link">Cars</a>
+        <a href="#" class="nav-link">Team</a>
+        <a href="#" class="nav-link">Reviews</a>
+      </div>
+
+      <div class="nav-icons">
+        <a href="#"><i class='bx bx-search'></i></a>
+        <a href="#"><i class='bx bx-user user-icon'></i></a>
+
+        <!-- Menu mobile -->
+        <div class="menu-icon">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- home -->
+  <section class="home" id="home">
+    <div class="home-content container">
+      <div class="home-img">
+        <img src="IMG/home.png" alt="Carro principal">
+      </div>
+      <form action="" class="input-form">
+        <div class="input-box input-border">
+          <span>Location</span>
+          <input type="search" placeholder="Search places">
+        </div>
+        <div class="input-box input-border">
+          <span>Start</span>
+          <input type="date" name="start-date" id="start-date">
+        </div>
+        <div class="input-box">
+          <span>Return</span>
+          <input type="date" name="return-date" id="return-date">
+        </div>
+        <i class='bx bx-search search-btn'></i>
+      </form>
+    </div>
+  </section>
+
+  <!-- Trending -->
+  <section class="trending container" id="trending">
+    <div class="heading">
+      <h2>Trending Vehicles</h2>
+    </div>
+    <div class="trending-content">
+      <div class="trend-box">
+        <h4>Electric</h4>
+        <img src="IMG/trend-1.png" alt="">
+        <h3>Taycar S</h3>
+        <p>From R$299/day</p>
+      </div>
+      <div class="trend-box">
+        <h4>Electric</h4>
+        <img src="IMG/trend-2.png" alt="">
+        <h3>Taycar</h3>
+        <p>From R$299/day</p>
+      </div>
+      <div class="trend-box">
+        <h4>Electric</h4>
+        <img src="IMG/trend-3.png" alt="">
+        <h3>Taycar Turbo</h3>
+        <p>From R$299/day</p>
+      </div>
+      <div class="trend-box">
+        <h4>Electric</h4>
+        <img src="IMG/trend-4.png" alt="">
+        <h3>Taycar Turismo</h3>
+        <p>From R$299/day</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rentals -->
+  <section class="rentals container" id="rentals">
+    <div class="heading">
+      <h2>Our Top Rentals</h2>
+      <p>Discover our top rentals, providing comfort, affordability, and convenience to make your next journey smooth and enjoyable</p>
+    </div>
+    <div class="rentals-content">
+      <!-- rental 1 -->
+      <div class="rental-box">
+        <div class="rental-top">
+          <h3>Sedan</h3>
+          <i class='bx bxs-heart'></i>
+        </div>
+        <img src="IMG/rental-1.png" alt="">
+        <h2>Rolls-Royce</h2>
+        <h4>Automatic</h4>
+        <div class="price-btn">
+          <p>$299<span>/day</span></p>
+          <a href="#" class="rental-btn">Rent</a>
+        </div>
+      </div>
+
+      <!-- rental 2 -->
+      <div class="rental-box">
+        <div class="rental-top">
+          <h3>Sedan</h3>
+          <i class='bx bxs-heart'></i>
+        </div>
+        <img src="IMG/rental-2.png" alt="">
+        <h2>Macan 4</h2>
+        <h4>Automatic</h4>
+        <div class="price-btn">
+          <p>$299<span>/day</span></p>
+          <a href="#" class="rental-btn">Rent</a>
+        </div>
+      </div>
+
+      <!-- rental 3 -->
+      <div class="rental-box">
+        <div class="rental-top">
+          <h3>Sedan</h3>
+          <i class='bx bxs-heart'></i>
+        </div>
+        <img src="IMG/rental-3.png" alt="">
+        <h2>Cayenne S E-Hybrid</h2>
+        <h4>Automatic/Manual</h4>
+        <div class="price-btn">
+          <p>$299<span>/day</span></p>
+          <a href="#" class="rental-btn">Rent</a>
+        </div>
+      </div>
+
+      <!-- rental 4 -->
+      <div class="rental-box">
+        <div class="rental-top">
+          <h3>Sedan</h3>
+          <i class='bx bxs-heart'></i>
+        </div>
+        <img src="IMG/rental-4.png" alt="">
+        <h2>Nissan GT-R</h2>
+        <h4>Automatic</h4>
+        <div class="price-btn">
+          <p>$299<span>/day</span></p>
+          <a href="#" class="rental-btn">Rent</a>
+        </div>
+      </div>
+
+      <!-- rental 5 -->
+      <div class="rental-box">
+        <div class="rental-top">
+          <h3>Sedan</h3>
+          <i class='bx bxs-heart'></i>
+        </div>
+        <img src="IMG/rental-5.png" alt="">
+        <h2>Panamera Turbo</h2>
+        <h4>Automatic</h4>
+        <div class="price-btn">
+          <p>$299<span>/day</span></p>
+          <a href="#" class="rental-btn">Rent</a>
+        </div>
+      </div>
+
+      <!-- rental 6 -->
+      <div class="rental-box">
+        <div class="rental-top">
+          <h3>Sedan</h3>
+          <i class='bx bxs-heart'></i>
+        </div>
+        <img src="IMG/rental-6.png" alt="">
+        <h2>Nissan Ariya</h2>
+        <h4>Automatic/Manual</h4>
+        <div class="price-btn">
+          <p>$299<span>/day</span></p>
+          <a href="#" class="rental-btn">Rent</a>
+        </div>
+      </div>
+
+      <!-- rental 7 -->
+      <div class="rental-box">
+        <div class="rental-top">
+          <h3>Sedan</h3>
+          <i class='bx bxs-heart'></i>
+        </div>
+        <img src="IMG/rental-7.png" alt="">
+        <h2>Cayenne Turbo</h2>
+        <h4>Automatic</h4>
+        <div class="price-btn">
+          <p>$299<span>/day</span></p>
+          <a href="#" class="rental-btn">Rent</a>
+        </div>
+      </div>
+
+      <!-- rental 8 -->
+      <div class="rental-box">
+        <div class="rental-top">
+          <h3>Sedan</h3>
+          <i class='bx bxs-heart'></i>
+        </div>
+        <img src="IMG/rental-8.png" alt="">
+        <h2>718 Boxster S</h2>
+        <h4>Automatic</h4>
+        <div class="price-btn">
+          <p>$299<span>/day</span></p>
+          <a href="#" class="rental-btn">Rent</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Team  -->
+  <section class="team container" id="team">
+    <!-- heading -->
+    <div class="heading">
+      <h2>Meet Our experts</h2>
+    </div>
+    <!-- team Content -->
+    <div class="team-content">
+      <div class="team-box">
+        <img src="IMG/team-1.png" alt="">
+        <h2>Brand Zones</h2>
+        <span>Co-Head</span>
+        <p>As car rental company, we seek out top manufacturers to provide our customers with the best Vehicles</p>
+      </div>
+      <div class="team-box">
+        <img src="IMG/team-2.png" alt="">
+        <h2>David Bunny</h2>
+        <span>CEO</span>
+        <p>As car rental company, we seek out top manufacturers to provide our customers with the best Vehicles</p>
+      </div>
+      <div class="team-box">
+        <img src="IMG/team-3.png" alt="">
+        <h2>Bunny Zones</h2>
+        <span>Director</span>
+        <p>As car rental company, we seek out top manufacturers to provide our customers with the best Vehicles</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Reviews -->
+  <section class="reviews" id="reviews">
+    <!-- heading -->
+    <div class="heading">
+      <h2>Our Customer's</h2>
+      <!-- reviews content -->
+    </div>
+    <div class="reviews-content container">
+      <div class="t-box">
+        <div class="stars">
+          <i class='bx  bx-star'></i>
+          <i class='bx  bx-star'></i>
+          <i class='bx  bx-star'></i>
+          <i class='bx  bx-star'></i>
+          <i class='bx  bx-star'></i>
+        </div>
+        <p>Experience the freedom of the road with our premium vehicle rentals.
+          Choose from a wide variety of models designed to fit your lifestyle.
+          Affordable rates, easy booking, and 24/7 customer support.</p>
+        <div class="profile">
+
+        </div>
+      </div>
+      <img src="IMG/profile-1.png" alt="">
+      <div class="profile-data">
+        <h3>Alfredo Bator</h3>
+        <span>New york</span>
+      </div>
+      <div class="t-box">
+        <div class="stars">
+          <i class='bx  bx-star'></i>
+          <i class='bx  bx-star'></i>
+          <i class='bx  bx-star'></i>
+          <i class='bx  bx-star'></i>
+          <i class='bx  bx-star'></i>
+        </div>
+        <p>Experience the freedom of the road with our premium vehicle rentals.
+          Choose from a wide variety of models designed to fit your lifestyle.
+          Affordable rates, easy booking, and 24/7 customer support.</p>
+        <div class="profile">
+
+        </div>
+      </div>
+      <img src="IMG/profile-2.png" alt="">
+      <div class="profile-data">
+        <h3>Sadiq parker</h3>
+        <span></span>
+      </div>New Jersy
+      <div class="t-box">
+        <div class="stars">
+          <i class='bx  bx-star'></i>
+          <i class='bx  bx-star'></i>
+          <i class='bx  bx-star'></i>
+          <i class='bx  bx-star'></i>
+          <i class='bx  bx-star'></i>
+        </div>
+        <p>Experience the freedom of the road with our premium vehicle rentals.
+          Choose from a wide variety of models designed to fit your lifestyle.
+          Affordable rates, easy booking, and 24/7 customer support.</p>
+        <div class="profile">
+
+        </div>
+      </div>
+      <img src="IMG/profile-3.png" alt="">
+      <div class="profile-data">
+        <h3>Ibrahin Apan</h3>
+        <span>Dubai</span>
+      </div>
+    </div>
+    <div class="t-box">
+      <div class="stars">
+        <i class='bx  bx-star'></i>
+        <i class='bx  bx-star'></i>
+        <i class='bx  bx-star'></i>
+        <i class='bx  bx-star'></i>
+        <i class='bx  bx-star'></i>
+      </div>
+      <p>Experience the freedom of the road with our premium vehicle rentals.
+        Choose from a wide variety of models designed to fit your lifestyle.
+        Affordable rates, easy booking, and 24/7 customer support.</p>
+      <div class="profile">
+
+      </div>
+    </div>
+    <img src="IMG/profile-4.png" alt="">
+    <div class="profile-data">
+      <h3>Jonahtan</h3>
+      <span>londres</span>
+    </div>
+  </section>
+  <!-- JS -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>]
