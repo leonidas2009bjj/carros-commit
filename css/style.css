@@ -19,6 +19,12 @@
   --poppins-font: "Poppins", sans-serif;
   --font-family-2: "Squada One", sans-serif;
 }
+
+/* TRANSIÇÃO SUAVE */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 body {
   color: var(--text-color);
   background: var(--bg-color);
@@ -508,7 +514,7 @@ header {
 }
 
 .newsletter form {
-  max-width: 600;
+  max-width: 600px;
   margin: 1.8rem auto auto auto;
   display: flex;
   justify-content: space-between;
@@ -632,4 +638,132 @@ header {
     font-size: 8rem;
     top: -60px;
   }
+}
+
+/* ===============================
+   DARK MODE – FINAL CORRETO
+   =============================== */
+
+body.dark {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+/* HOME */
+body.dark .home {
+  background: #020617;
+}
+
+body.dark .home::after {
+  background: #020617;
+}
+
+body.dark .home-img::before {
+  color: rgba(148, 163, 184, 0.15);
+}
+
+/* FORM */
+body.dark .input-form {
+  background: #0f172a;
+}
+
+body.dark .input-box span {
+  color: #e5e7eb;
+  font-weight: 600;
+}
+
+body.dark .input-box input {
+  color: #e5e7eb;
+}
+
+body.dark .input-box input::placeholder {
+  color: #94a3b8;
+}
+
+body.dark input[type="date"] {
+  color-scheme: dark;
+  color: #e5e7eb;
+}
+
+body.dark .input-border {
+  border-right: 1px solid #334155;
+}
+
+/* BUTTON */
+body.dark .search-btn {
+  background: var(--main-color);
+  color: #fff;
+}
+
+/* CARDS */
+body.dark .trend-box,
+body.dark .rental-box,
+body.dark .team-box,
+body.dark .t-box {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+body.dark .trend-box h4,
+body.dark .rental-top h3 {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+/* NEWSLETTER */
+body.dark .newsletter form {
+  border-color: #334155;
+}
+
+body.dark .newsletter form input {
+  color: #e5e7eb;
+}
+
+body.dark .newsletter form input::placeholder {
+  color: #94a3b8;
+}
+
+/* FOOTER */
+body.dark .footer {
+  background: #020617;
+}
+
+body.dark .footer-box h3,
+body.dark .footer-box a,
+body.dark .footer-box p,
+body.dark .copyright {
+  color: #e5e7eb;
+}
+
+/* ===============================
+   BOTÃO SOL / LUA
+   =============================== */
+
+.theme-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+}
+
+/* cores dos ícones */
+.theme-btn .bx {
+  color: var(--bg-color);
+}
+
+/* por padrão (modo claro) */
+.theme-btn .sun {
+  display: none;
+}
+
+/* quando dark estiver ativo */
+body.dark .theme-btn .moon {
+  display: none;
+}
+
+body.dark .theme-btn .sun {
+  display: inline;
+  color: #facc15; /* amarelinho bonito */
 }
