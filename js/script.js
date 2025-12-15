@@ -25,3 +25,14 @@ toggleBtn.addEventListener("click", () => {
     toggleBtn.innerHTML = '<i class="bx bx-moon"></i>';
   }
 });
+
+const reveals = document.querySelectorAll(".rental-box, .trend-box, .team-box");
+
+window.addEventListener("scroll", () => {
+  reveals.forEach((el) => {
+    const top = el.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      el.classList.add("active");
+    }
+  });
+});
